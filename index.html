@@ -1,1 +1,121 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programming Languages</title>
+    <script language="JavaScript" type="text/javascript" src="assign1.js">
+    </script>
+
+   <!-- Style sheet for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body background="img/back.jpg">
+<div id="big_wrap">
+    <header>
+        <h1><i class="fa fa-cog fa-spin"></i> Programming Languages</h1>
+    </header>
+
+    <!--Top Navigation Menu-->
+    <nav>
+        <ul id="drop-nav">
+            <li class="menu" id="0" onclick="post(0)"><a href="#">Home</a></li>
+            <li class="menu"><a href="#">Topics</a>
+                <ul>
+                    <li class="sub" onclick="post(1)"><a href="#">Java</a></li>
+                    <li class="sub" onclick="post(3)"><a href="#">Python</a></li>
+                    <li class="sub" onclick="post(4)"><a href="#">JavaScript</a></li>
+                </ul>
+            </li>
+            <li class="menu"><a href="#">Developer</a>
+                <ul>
+                    <li class="sub"><a href="https://github.com/pvgupta24" target='_blank'>Praveen Gupta</a></li>
+                    <li class="sub"><a href="#">Anonymous</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!--Vertical Side Menu-->
+    <div>
+        <ul id="side">
+            <li class="side_option" id="1" onclick="post(1)"><a>Java</a></li>
+            <li class="side_option" id="2" onclick="post(2)"><a>C++</a></li>
+            <li class="side_option" id="3" onclick="post(3)"><a>Python</a></li>
+            <li class="side_option" id="4" onclick="post(4)"><a>JavaScript</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <!--Main Content-->
+        <article id="bo">
+
+
+            <div id="post0" class="tabcontent"><br>
+                <p>A <strong>Programming Language</strong> is a formal language that specifies a set of instructions
+                    that can be used to produce various kinds of output. Programming languages generally consist of
+                    instructions for a computer. Programming languages can be used to create programs that implement
+                    specific algorithms.
+                </p><br>
+                <img src="img/prog.jpg" alt="JAVA" width="500px">
+            </div>
+
+            <div id="post1" class="tabcontent">
+                <h1><u>JAVA</u></h1><br>
+                <p><strong>Java</strong> is a class-based, object-oriented language intended to let application
+                    developers "write once, run anywhere" (WORA), meaning that
+                    compiled Java code can run on all platforms that support Java without the need for recompilation.
+                </p><br><br>
+                <img src="img/java.jpg" alt="JAVA" width="500px">
+            </div>
+            <div id="post2" class="tabcontent">
+                <h1><u>C++</u></h1><br>
+                <p><strong>C++</strong> is a general-purpose programming language. It has imperative, object-oriented
+                    and generic programming features, while also providing facilities for low-level memory manipulation.
+                </p><br>
+                <img src="img/c.jpg" alt="C++" width="500px">
+            </div>
+            <div id="post3" class="tabcontent">
+                <h1><u>PYTHON</u></h1><br>
+                <p><strong>Python</strong> emphasizes code readability by using
+                    whitespace indentation to delimit code blocks rather than curly braces.
+                    Python features a dynamic type system and automatic memory management and supports multiple
+                    programming paradigms, including object-oriented, imperative, functional programming, and procedural
+                    styles which allows programmers to express concepts in fewer lines of code than possible in
+                    languages such as C++ or Java.
+                </p><br>
+                <img src="img/python.jpg" alt="PYTHON" width="500px">
+            </div>
+            <div id="post4" class="tabcontent">
+                <h1><u>JavaScript</u></h1><br>
+                <p><strong>JavaScript</strong> , often abbreviated as "JS", is a high-level,
+                    dynamic, untyped, and interpreted run-time language.Alongside HTML and CSS, JavaScript is one of the
+                    three core technologies of World Wide Web content production.JavaScript is prototype-based with
+                    first-class
+                    functions, making it a multi-paradigm language, supporting object-oriented,imperative, and
+                    functional programming styles.
+                </p><br>
+                <img src="img/hcj.jpg" alt="JAVASCRIPT" width="400px">
+            </div>
+
+
+        </article>
+        <!--Fixed Footer-->
+        <footer>
+            <p style="font-size: 130%">Praveen &nbsp; Gupta</p>
+            <p>
+                <a href="mailto:pvgupta24@gmail.com">
+                    <i class="fa fa-envelope"></i>
+                </a>
+                <a href="https://github.com/pvgupta24" target='_blank'>
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/praveen-gupta-953869130/" target='_blank'>
+                    <i class="fa fa-linkedin-square"></i>
+                </a>
+            </p>
+        </footer>
+
+    </div>
+</div>
+</body>
+</html>
