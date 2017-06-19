@@ -1,5 +1,9 @@
 <div ng-controller="postsCtrl">
-
+    <div class="input-group input-group-lg ">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+        <input type="text" ng-model="search" class="form-control" placeholder="Search posts"
+               aria-describedby="sizing-addon1">
+    </div><br>
     <p class="lead">
         Enjoy the posts... or ... <a ng-click="hideToggle()">add a Post urself!!</a></p>
     <div class="container" ng-hide="newPostHide">
@@ -27,7 +31,7 @@
     </div>
     <br><br>
     <div class="container">
-        <div class="row" id="a" ng-repeat="post in posts">
+        <div class="row" id="a" ng-repeat="post in posts|filter:search">
 
             <div class="">
                 <div class="panel-group">
