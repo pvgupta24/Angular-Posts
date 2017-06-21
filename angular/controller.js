@@ -82,10 +82,10 @@ app.controller('usersCtrl', function ($scope, $http, $rootScope, $state, $locati
         }).then(function (response) {
             $scope.userData = response.data;
             if ($scope.userData.admin) {
-                $scope.userData.admin = "admin";
+                $scope.userData.admin = "Admin";
             }
             else {
-                $scope.userData.admin = "basic";
+                $scope.userData.admin = "Basic User";
             }
         });
         $scope.userHide = false;

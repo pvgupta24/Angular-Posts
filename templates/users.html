@@ -3,18 +3,20 @@
         <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
         <input type="text" ng-model="search" class="form-control" placeholder="Search Box"
                aria-describedby="sizing-addon1">
-    </div><br>
-    <div class=" bg-success" ng-hide="userHide">
+    </div>
+    <br>
+    <div class=" alert alert-info" ng-hide="userHide">
         <button type="button" class="close" aria-label="Close" ng-click="close()">
             <span aria-hidden="true" class="">&times;</span>
         </button>
-        <div class="">
-            <blockquote class="card-blockquote">
-                <b>NAME </b> : <span class="text-capitalize" style="padding-left:2ch"> {{userData. name}}</span><br>
-                <b>EMAIL ID</b> :<span style="padding-left:1ch"> {{userData.email}}</span><br>
+        <div>
+            <blockquote class="">
+                <b>NAME </b> : <span class="text-capitalize"> {{userData. name}}</span><br>
+                <b>Email ID</b> :<span> {{userData.email}}</span>&nbsp;
 
-                <small>@{{username}}</small>
-                <span class="float-left badge badge-success">{{userData.admin}}</span>
+                <small>&nbsp;@{{username}}</small>
+                &nbsp;&nbsp;
+                <span class="float-left badge badge-success">&nbsp;{{userData.admin}}&nbsp;</span>
             </blockquote>
 
         </div>
